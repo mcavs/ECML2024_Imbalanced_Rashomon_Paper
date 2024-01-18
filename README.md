@@ -1,1 +1,1 @@
-# XAI2024_Imbalanced_Rashomon_Paper
+# "An Evaluation Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification" Paper Repository
