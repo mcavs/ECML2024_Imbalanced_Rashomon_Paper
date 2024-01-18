@@ -1,9 +1,10 @@
-setwd("/cloud/project/datasets")
+setwd("https://github.com/mcavs/XAI2024_Imbalanced_Rashomon_Paper/upload/main/datasets")
 csv_files <- list.files(pattern = "\\.csv$")
 
 datasets <- NULL
 for (file in csv_files) {
   data <- read.csv(file)
+  # Transform the response variable to a factor variable
   data$Class <- as.factor(data$Class)
   
   char_columns <- sapply(data, is.character)
