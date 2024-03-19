@@ -5,7 +5,7 @@ install.packages("ROSE")
 install.packages("themis")
 install.packages("imbalance")
 install.packages("yardstick")
-
+install.packages("ggstatsplot")
 
 library(devtools)
 library(mlr3oml)
@@ -14,6 +14,7 @@ library(ROSE)
 library(imbalance)
 library(themis)
 library(yardstick)
+library(ggstatsplot)
 
 devtools::install_github("ModelOriented/forester", force = TRUE)
 library(forester)
