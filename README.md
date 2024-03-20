@@ -94,3 +94,6 @@ Run [performance_gain_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rasho
 (!) This figure can be repruduced using the `data_rashomon.csv` and `data_VDisc.csv`.
 
 
+### References
+
+Stando, A., Cavus, M., & Biecek, P. (2023). The Effect of Balancing Methods on Model Behavior in Imbalanced Classification Problems. arXiv preprint arXiv:2307.00157.
