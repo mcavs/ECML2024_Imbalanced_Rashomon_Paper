@@ -1,4 +1,6 @@
-# "An Evaluation Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification" 
+# The paper "An Evaluation Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification" 
+
+This repository consists the supplemental materials of the paper "[An evaluation study on the Rashomon effect of balancing methods in imbalanced classification]()". 
 
 1. Install the essential packages [packages.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/packages.R)
 2. Import datasets [import_datasets.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/import_dataset.R)
@@ -9,6 +11,35 @@
     - This step may takes long regarding to the computation power.
     - For this, we stored the results of experiments as `data_rashomon.csv` and `data_VDisc.csv`.
     - These files can be used to reproduce the following plots.
+  
+## Data 
+The Rashomon set is created on the tasks within the imbalanced benchmark dataset proposed by Stando et al. (2023), as provided in the following table. 
+
+| Dataset            | Imbalanced ratio | #Samples | #Variables |
+|--------------------|------------------|----------|------------|
+| spambase           | 1.54             | 4601     | 55         |
+| MagicTelescope     | 1.84             | 19020    | 10         |
+| steel-plates-fault | 1.88             | 1941     | 13         |
+| qsar-biodeg        | 1.96             | 1055     | 17         |
+| phoneme            | 2.41             | 5404     | 5          |
+| jm1                | 4.17             | 10880    | 17         |
+| SpeedDating        | 4.63             | 1048     | 18         |
+| kc1                | 5.47             | 2109     | 17         |
+| churn              | 6.07             | 5000     | 8          |
+| pc4                | 7.19             | 1458     | 12         |
+| pc3                | 8.77             | 1563     | 14         |
+| abalone            | 9.68             | 4177     | 7          |
+| us_crime           | 12.29            | 1994     | 100        |
+| yeast_ml8          | 12.58            | 2417     | 103        |
+| pc1                | 13.40            | 1109     | 17         |
+| ozone-level-8hr    | 14.84            | 2534     | 72         |
+| wilt               | 17.54            | 4839     | 5          |
+| wine_quality       | 25.77            | 4898     | 11         |
+| yeast_me2          | 28.10            | 1484     | 8          |
+| mammography        | 42.01            | 11183    | 6          |
+| abalone_19         | 129.53           | 4177     | 7          |
+
+It is one of the imbalanced benchmark datasets consists several data from the various domains. The imbalance ratio (\textit{$\#$samples in majority class/$\#$samples in minority class}) of the datasets varies between $1.54$ and $129.53$.
 
 
 ## Plots
