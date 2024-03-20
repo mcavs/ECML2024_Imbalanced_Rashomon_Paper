@@ -96,4 +96,4 @@ Run [performance_gain_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rasho
 
 ### References
 
-Stando, A., Cavus, M., & Biecek, P. (2023). The Effect of Balancing Methods on Model Behavior in Imbalanced Classification Problems. arXiv preprint arXiv:2307.00157.
+Stando, A., Cavus, M., & Biecek, P. (2023). [The Effect of Balancing Methods on Model Behavior in Imbalanced Classification Problems](https://arxiv.org/pdf/2307.00157.pdf). arXiv preprint arXiv:2307.00157.
