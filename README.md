@@ -21,6 +21,7 @@ The zone plot of the Rashomon metrics ambiguity and discrepancy for different ba
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/plot1.png" width="800">
 
 Run [rashomon_plots.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/rashomon_plots.R) to reproduce `Figure 2`.
+
 (!) This figure can be repruduced using the `data_rashomon.csv`.
 
 
@@ -30,6 +31,7 @@ The distribution plots of the Rashomon metrics ambiguity and discrepancy for dif
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/comparison_amb_disc.png" width="800">
 
 Run [ggstatsplots_on_Rash_stats.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/ggstatsplots_on_Rash_stats.R) to reproduce `Figure 3`.
+
 (!) This figure can be repruduced using the `data_rashomon.csv`.
 
 ### Figure 4 
@@ -38,6 +40,7 @@ The distribution plots of the Rashomon metric variable importance order discrepa
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/VIO_disc.png" width="800">
 
 Run [VI_disc_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/VI_disc_plot.R) to reproduce `Figure 4`.
+
 (!) This figure can be repruduced using the `data_VDisc.csv`.
 
 
@@ -47,6 +50,7 @@ The distribution plots of the Rashomon metric variable importance order discrepa
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/partial_resampling_plot.png" width="800">
 
 Run [partial_resampling_plots.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/partial_resampling_plots.R) to reproduce `Figure 5`.
+
 (!) This figure can be repruduced using the `data_rashomon.csv` and `data_VDisc.csv`.
 
 ### Figure 6
@@ -55,6 +59,7 @@ The performance gain plots of ambiguity, discrepancy, variable importance order 
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/performance_gain_plot.png" width="800">
 
 Run [performance_gain_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/performance_gain_plot.R) to reproduce `Figure 6`.
+
 (!) This figure can be repruduced using the `data_rashomon.csv` and `data_VDisc.csv`.
 
 
