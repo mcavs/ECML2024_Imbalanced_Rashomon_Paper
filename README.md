@@ -13,7 +13,7 @@ This repository consists the supplemental materials of the paper "[An evaluation
     - These files can be used to reproduce the following plots.
   
 ## Data 
-The Rashomon set is created on the tasks within the imbalanced benchmark dataset proposed by Stando et al. (2023), as provided in the following table. 
+The Rashomon set is created on the tasks within the imbalanced benchmark dataset provided in the following table. 
 
 | Dataset            | Imbalanced ratio | #Samples | #Variables |
 |--------------------|------------------|----------|------------|
@@ -93,7 +93,3 @@ Run [performance_gain_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rasho
 
 (!) This figure can be repruduced using the `data_rashomon.csv` and `data_VDisc.csv`.
 
-
-### References
-
-Stando, A., Cavus, M., & Biecek, P. (2023). [The Effect of Balancing Methods on Model Behavior in Imbalanced Classification Problems](https://arxiv.org/pdf/2307.00157.pdf). arXiv preprint arXiv:2307.00157.
