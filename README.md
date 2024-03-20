@@ -39,7 +39,7 @@ The Rashomon set is created on the tasks within the imbalanced benchmark dataset
 | mammography        | 42.01            | 11183    | 6          |
 | abalone_19         | 129.53           | 4177     | 7          |
 
-It is one of the imbalanced benchmark datasets consists several data from the various domains. The imbalance ratio (\textit{$\#$samples in majority class/$\#$samples in minority class}) of the datasets varies between $1.54$ and $129.53$.
+It is one of the imbalanced benchmark datasets consists several data from the various domains. The imbalance ratio (`#Samples in majority class` / `#Samples in minority class`) of the datasets varies between $1.54$ and $129.53$.
 
 
 ## Plots
