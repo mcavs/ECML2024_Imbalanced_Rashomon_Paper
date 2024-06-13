@@ -78,9 +78,9 @@ Run [VI_disc_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper
 ### Figure 5
 The distribution plots of the Rashomon metric variable importance order discrepancy for different balancing methods and varying partial resampling ratios.
 
-<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/partial_resampling_plot.png" width="800">
+<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure5.png" width="800">
 
-Run [partial_resampling_plots.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/partial_resampling_plots.R) to reproduce `Figure 5`.
+Run [Figure5.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure5.R) to reproduce `Figure 5`.
 
 (!) This figure can be repruduced using the `data_rashomon.csv` and `data_VDisc.csv`.
 
