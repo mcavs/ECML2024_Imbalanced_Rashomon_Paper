@@ -59,9 +59,9 @@ Run [Figure2.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob
 ### Figure 3 
 The distribution plots of the Rashomon metrics ambiguity and discrepancy for different balancing methods. The plots consist of the results of the statistical tests Kruskal Wallis and Dunn’s Pairwise tests. The reference bars above each violin indicate statistically significant differences between the medians of groups and the corresponding statistical information.
 
-<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/comparison_amb_disc.png" width="800">
+<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure3.png" width="800">
 
-Run [ggstatsplots_on_Rash_stats.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/ggstatsplots_on_Rash_stats.R) to reproduce `Figure 3`.
+Run [Figure3.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure3.R) to reproduce `Figure 3`.
 
 (!) This figure can be repruduced using the `data_rashomon.csv`.
 
