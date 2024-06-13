@@ -8,12 +8,12 @@ library(tidyr)
 library(tidyverse)
 library(ggplot2)
 
+data_VIDisc$resampling_ratio <- paste0("resampling ratio = ", data_VIDisc$resampling_ratio)
 data_VIDisc2 <- data_VIDisc |> left_join(data_rashomon)
 
 data_long <- data_VIDisc2 |>
-  pivot_longer(cols = c(ambiguity, discrepancy, VIOdiscrepancy), names_to = "type", values_to = "value")
+  pivot_longer(cols = c(obscurity, discrepancy, similarity_value), names_to = "type", values_to = "value")
 
-data_long$resampling_ratio <- paste0("resampling ratio = ", data_long$resampling_ratio)
 
 ggplot(data_long, aes(x = value, y = balancing_method, fill = balancing_method)) + 
   geom_boxplot(staplewidth = 0.8) + 
