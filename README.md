@@ -70,7 +70,7 @@ The distribution plots of the Rashomon metric variable importance order discrepa
 
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/VIO_disc.png" width="800">
 
-Run [VI_disc_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/VI_disc_plot.R) to reproduce `Figure 4`.
+Run [Figure4.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure4.R) to reproduce `Figure 4`.
 
 (!) This figure can be repruduced using the `data_VDisc.csv`.
 
