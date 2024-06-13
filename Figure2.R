@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------------------------------------------
 # Figure 2
 # ---------------------------------------------------------------------------------------------------------------
-# The zone plot of the Rashomon metrics ambiguity and discrepancy for different balancing methods and various 
+# The zone plot of the Rashomon metrics obscurity and discrepancy for different balancing methods and various 
 # resampling ratios. The zones show two-dimensional regions where metrics’ values are dense. The value of 1.25 
 # means the frequency of the majority class over the frequency of the minority class. Zones being close to zero 
 # on both axes indicate low severity of multiplicity, and moving away from them indicates increasing severity 
@@ -14,10 +14,10 @@ library(gridExtra)
 
 data_rashomon$resampling_ratio <- paste0("resampling ratio = ", data_rashomon$resampling_ratio)
 
-ggplot(data_rashomon, aes(x = ambiguity, y = discrepancy, col = balancing_method)) +
+ggplot(data_rashomon, aes(x = obscurity, y = discrepancy, col = balancing_method)) +
   geom_point(size = 1, alpha = 0.7) +
   xlim(c(0, 0.4)) + 
-  labs(x = "ambiguity", y = "discrepancy", col = "", fill = "") +
+  labs(x = "obscurity", y = "discrepancy", col = "", fill = "") +
   theme_bw() + 
   theme(legend.position = "top",
         axis.text.x  = element_text(size = 12),    
