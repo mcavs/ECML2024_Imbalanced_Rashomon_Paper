@@ -51,7 +51,7 @@ The zone plot of the Rashomon metrics ambiguity and discrepancy for different ba
 
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure2.png" width="800">
 
-Run [rashomon_plots.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/rashomon_plots.R) to reproduce `Figure 2`.
+Run [Figure2.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure2.R) to reproduce `Figure 2`.
 
 (!) This figure can be repruduced using the `data_rashomon.csv`.
 
