@@ -8,7 +8,7 @@ This repository consists the supplemental materials of the paper "[An evaluation
 4. Run the `balance()` function to balance the imbalanced datasets [balance.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/balance.R)
 5. Run the `rashomon_set()` function to create a Rashomon set for a dataset [rashomon_set.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/rashomon_set.R)
 6. Run the experiments on the datasets for various resampling ratios [experiments.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/experiments.R)
-    - This step may takes long regarding to the computation power.
+    - This step may take a long regarding the computation power.
     - For this, we stored the results of experiments as `data_rashomon.csv` and `data_VDisc.csv`.
     - These files can be used to reproduce the following plots.
   
@@ -43,7 +43,7 @@ It is one of the imbalanced benchmark datasets consists several data from the va
 
 
 ## Plots
-There are five plots `Figures 2-6` in the paper. You can used pre-saved experiments results in the files `data_rashomon.csv` and `data_VDisc.csv` if you do not have enough computation power to re-run the experiments.
+There are five plots `Figures 2-6` in the paper. You can use pre-saved experiment results in the files `data_rashomon.csv` and `data_VDisc.csv` if you do not have enough computation power to re-run the experiments.
 
 
 ### Figure 2 
@@ -53,17 +53,18 @@ The zone plot of the Rashomon metrics obscurity and discrepancy for different ba
 
 Run [Figure2.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure2.R) to reproduce `Figure 2`.
 
-(!) This figure can be repruduced using the `data_rashomon.csv`.
+(!) This figure can be reproduced using the `data_rashomon.csv`.
 
 
 ### Figure 3 
 The distribution plots of the Rashomon metrics obscurity and discrepancy for different balancing methods. The plots consist of the results of the statistical tests Kruskal Wallis and Dunn’s Pairwise tests. The reference bars above each violin indicate statistically significant differences between the medians of groups and the corresponding statistical information.
 
-<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure3.png" width="800">
+<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Fig_a.png" width="800">
+<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Fig_b.png" width="800">
 
 Run [Figure3.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure3.R) to reproduce `Figure 3`.
 
-(!) This figure can be repruduced using the `data_rashomon.csv`.
+(!) This figure can be reproduced using the `data_rashomon.csv`.
 
 ### Figure 4 
 The distribution plots of the Rashomon metric variable importance order discrepancy for different balancing methods. The plots consist of the results of the only Kruskal-Wallis test. Because there is no difference between groups, no need to conduct any pairwise comparison test.
@@ -72,7 +73,7 @@ The distribution plots of the Rashomon metric variable importance order discrepa
 
 Run [Figure4.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure4.R) to reproduce `Figure 4`.
 
-(!) This figure can be repruduced using the `data_VDisc.csv`.
+(!) This figure can be reproduced using the `data_VDisc.csv`.
 
 
 ### Figure 5
@@ -82,14 +83,14 @@ The distribution plots of the Rashomon metric variable importance order discrepa
 
 Run [Figure5.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure5.R) to reproduce `Figure 5`.
 
-(!) This figure can be repruduced using the `data_rashomon.csv` and `data_VDisc.csv`.
+(!) This figure can be reproduced using the `data_rashomon.csv` and `data_VDisc.csv`.
 
 ### Figure 6
-The performance gain plots of obscurity, discrepancy, variable importance order discrepancy for different balancing methods and varying partial resampling ratios. The horizontal axis shows the performance gain in terms of AUC. The zero indicates no gain, and the negative values indicate the performance loss. The vertical axes are limited between zero and one for obscurity and discrepacny, but it is between minus one and one for variable importance order discrepancy. The moving of the zones towards the positive way on the horizontal axis indicates an increase in performance gain, and moving towards the negative way on the vertical axis indicates a decrease in the multiplicity.
+The performance gain plots of obscurity, discrepancy, variable importance order discrepancy for different balancing methods, and varying partial resampling ratios. The horizontal axis shows the performance gain in terms of AUC. The zero indicates no gain, and the negative values indicate the performance loss. The vertical axes are limited between zero and one for obscurity and discrepancy, but it is between minus one and one for variable importance order discrepancy. The moving of the zones towards the positive way on the horizontal axis indicates an increase in performance gain, and moving towards the negative way on the vertical axis indicates a decrease in the multiplicity.
 
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure6.png" width="800">
 
 Run [performance_gain_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/performance_gain_plot.R) to reproduce `Figure 6`.
 
-(!) This figure can be repruduced using the `data_rashomon.csv` and `data_VDisc.csv`.
+(!) This figure can be reproduced using the `data_rashomon.csv` and `data_VDisc.csv`.
 
