@@ -1,6 +1,6 @@
-# The paper "An Evaluation Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification" 
+# The supplementary repository of the paper "An Evaluation Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification" 
 
-This repository consists the supplemental materials of the paper "[An evaluation study on the Rashomon effect of balancing methods in imbalanced classification]()". 
+This repository consists the supplemental materials of the paper "[An evaluation study on the Rashomon effect of balancing methods in imbalanced classification](https://arxiv.org/pdf/2405.01557)" which is presented in [DEARING: Workshop on Data-cEntric ARtIficial iNtelliGence](https://dearing2024.di.uniba.it/landing) workshop at [ECML 2024](https://ecmlpkdd.org/2024/) in Vilnius. 
 
 1. Install the essential packages [packages.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/packages.R)
 2. Import datasets [import_datasets.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/import_dataset.R)
