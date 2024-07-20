@@ -9,23 +9,22 @@ library(tidyverse)
 library(ggplot2)
 library(ggstatsplot)
 
-VI_disc <- VI_disc |> mutate(balancing_methods = as.factor(balancing_methods))
-levels(VI_disc$balancing_methods) <- c("Original", "Oversampling", "Undersampling", "Near miss", "SMOTE")
-
-ggplot(VI_disc, aes(x = balancing_methods, y = similarity_values)) + 
-  geom_boxplot() + 
-  labs(title = "Rashomon VI Discrepancy Plot",
-       x = "balancing method",
-       y = "similarity score") + 
-  coord_flip() + 
-  theme_bw()
-
-ggbetweenstats(data = VI_disc,
-               x = balancing_methods,
-               y = similarity_values,
+ggbetweenstats(data = data_VIDisc,
+               x    = balancing_method,
+               y    = similarity_value,
                type = "nonparametric",
                pairwise.display = "s",
                ylab = "variable importance order discrepancy",
-               xlab = "balancing method")
+               xlab = "balancing method",
+               ggplot.component = list(theme(text               = element_text(size = 18),
+                                             plot.subtitle      = element_text(size = 18),
+                                             axis.title.y.right = element_text(size = 18))),
+               ggsignif.args = list(textsize = 3, tip_length    = 0.02),
+               centrality.label.args = list(size = 5)) + 
+  scale_x_discrete(labels = c("Original", 
+                              "Undersampling", 
+                              "Near miss", 
+                              "Oversampling", 
+                              "SMOTE"))
 # ---------------------------------------------------------------------------------------------------------------
 
