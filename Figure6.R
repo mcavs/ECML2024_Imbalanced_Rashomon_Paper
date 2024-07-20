@@ -1,15 +1,16 @@
 # 22.02.2024
 # performance gain plot
 library(readr)
-setwd("/Volumes/LaCie/Imbalanced Rashomon")
-data_rash     <- read_csv("data_rash.csv")
-data_rashomon <- read_csv("data_rashomon.csv")
+data_rashomon_perf <- read_csv("data_rashomon_perf.csv")
+data_rashomon      <- read_csv("data_rashomon.csv")
+data_VIDisc        <- read_csv("data_VIDisc.csv")
 
 auc_performance_gain <- numeric()
-for (i in seq(1, nrow(data_rash), by = 5)) {
-  auc_performance_gain <- c(auc_performance_gain, data_rash$auc[(i + 1) : min(i + 4, nrow(data_rash))] - data_rash$auc[i])}
+for (i in seq(1, nrow(data_rashomon_perf), by = 5)) {
+  auc_performance_gain <- c(auc_performance_gain, 
+                            data_rashomon_perf$auc[(i + 1) : min(i + 4, nrow(data_rashomon_perf))] - data_rashomon_perf$auc[i])}
 
- data_performance_gain <- data_rash |>
+ data_performance_gain <- data_rashomon_perf |>
   filter(balancing_method != "Original") |>
   cbind(auc_performance_gain)
 
@@ -19,15 +20,13 @@ library(gridExtra)
 library(ggplot2)
 library(ggpubr)
 
-# data_performance_gain$resampling_ratio <- paste0("resampling ratio = ", data_performance_gain$resampling_ratio)
-names(VI_disc)[2] <- "balancing_method"
-names(VI_disc)[4] <- "resampling_ratio"
-VI_disc$resampling_ratio <- paste0("resampling ratio = ", VI_disc$resampling_ratio)
-VI_disc2 <- VI_disc |> filter(balancing_method != "Original")
+VI_disc2 <- data_VIDisc |> filter(balancing_method != "Original")
 data_performance_gain2 <- data_performance_gain |> left_join(VI_disc2)
+data_performance_gain2$resampling_ratio <- paste0("resampling ratio = ", 
+                                                  data_performance_gain2$resampling_ratio)
 
 p1 <- ggplot(data_performance_gain2, aes(x     = auc_performance_gain, 
-                                         y     = ambiguity,
+                                         y     = obscurity,
                                          color = balancing_method)) +
   geom_point() +
   ylim(0, 1) +
@@ -40,7 +39,13 @@ p1 <- ggplot(data_performance_gain2, aes(x     = auc_performance_gain,
   labs(x = "AUC performance gain",
        color = "",
        fill = "") +
-  theme_bw() 
+  theme_bw() + 
+  theme(axis.text.x  = element_text(size = 18),    
+        axis.text.y  = element_text(size = 18),    
+        axis.title.x = element_text(size = 18),   
+        axis.title.y = element_text(size = 18),
+        strip.text.x = element_text(size = 18),
+        legend.text  = element_text(size = 18))
 
 
 
@@ -58,10 +63,16 @@ p2 <- ggplot(data_performance_gain2, aes(x     = auc_performance_gain,
   labs(x = "AUC performance gain",
        color = "",
        fill = "") + 
-  theme_bw() 
+  theme_bw() + 
+  theme(axis.text.x  = element_text(size = 18),    
+        axis.text.y  = element_text(size = 18),    
+        axis.title.x = element_text(size = 18),   
+        axis.title.y = element_text(size = 18),
+        strip.text.x = element_text(size = 18),
+        legend.text  = element_text(size = 18)) 
 
 p3 <- ggplot(data_performance_gain2, aes(x     = auc_performance_gain, 
-                                         y     = similarity_values,
+                                         y     = similarity_value,
                                          color = balancing_method)) +
   geom_point() +
   ylim(-1, 1) +
@@ -75,27 +86,12 @@ p3 <- ggplot(data_performance_gain2, aes(x     = auc_performance_gain,
        y = "variable importance order discrepancy",
        color = "",
        fill = "") + 
-  theme_bw() 
+  theme_bw() + 
+  theme(axis.text.x  = element_text(size = 18),    
+        axis.text.y  = element_text(size = 18),    
+        axis.title.x = element_text(size = 18),   
+        axis.title.y = element_text(size = 18),
+        strip.text.x = element_text(size = 18),
+        legend.text  = element_text(size = 18)) 
 
 ggarrange(p1, p2, p3, ncol = 3, common.legend = TRUE, legend = "top")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
