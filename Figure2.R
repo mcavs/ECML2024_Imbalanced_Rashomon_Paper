@@ -20,12 +20,12 @@ ggplot(data_rashomon, aes(x = obscurity, y = discrepancy, col = balancing_method
   labs(x = "obscurity", y = "discrepancy", col = "", fill = "") +
   theme_bw() + 
   theme(legend.position = "top",
-        axis.text.x  = element_text(size = 12),    
-        axis.text.y  = element_text(size = 12),    
-        axis.title.x = element_text(size = 14),   
-        axis.title.y = element_text(size = 14),
-        strip.text.x = element_text(size = 14),
-        legend.text  = element_text(size = 9)) + 
+        axis.text.x  = element_text(size = 18),    
+        axis.text.y  = element_text(size = 18),    
+        axis.title.x = element_text(size = 18),   
+        axis.title.y = element_text(size = 18),
+        strip.text.x = element_text(size = 18),
+        legend.text  = element_text(size = 18)) + 
   geom_density_2d(aes(group = balancing_method, col = balancing_method), alpha = 0.5, linewidth = 0.2) + 
   geom_encircle(aes(fill = balancing_method), s_shape = 2, expand = 0, 
                 spread = 0.02, alpha = 0.2, show.legend = TRUE) + 
