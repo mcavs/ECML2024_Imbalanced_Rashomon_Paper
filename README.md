@@ -9,7 +9,7 @@ This repository consists the supplemental materials of the paper "[An evaluation
 5. Run the `rashomon_set()` function to create a Rashomon set for a dataset [rashomon_set.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/rashomon_set.R)
 6. Run the experiments on the datasets for various resampling ratios [experiments.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/experiments.R)
     - This step may take a long regarding the computation power.
-    - For this, we stored the results of experiments as `data_rashomon.csv` and `data_VDisc.csv`.
+    - For this, we stored the results of experiments as `data_rashomon.csv`, `data_VDisc.csv`, and `data_rashomon_perf.csv`.
     - These files can be used to reproduce the following plots.
   
 ## Data 
