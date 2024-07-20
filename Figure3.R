@@ -14,7 +14,14 @@ p1 <- ggbetweenstats(
   y     = obscurity,
   type  = "nonparametric",
   xlab  = "balancing method",
-  ylab  = "obscurity")
+  ylab  = "obscurity",
+  ggplot.component = list(theme(text = element_text(size = 18),
+                                plot.subtitle = element_text(size = 18),
+                                axis.title.y.right = element_blank(),
+                                axis.title.x = element_blank(),
+                                axis.text.x = element_blank())),
+  ggsignif.args = list(textsize = 3, tip_length = 0.02),
+  centrality.label.args = list(size = 5))
 
 p2 <- ggbetweenstats(
   data  = data_rashomon,
@@ -22,9 +29,19 @@ p2 <- ggbetweenstats(
   y     = discrepancy,
   type  = "nonparametric",
   xlab  = "balancing method",
-  ylab  = "discrepancy")
+  ylab  = "discrepancy",
+  ggplot.component = list(theme(text = element_text(size = 18),
+                                plot.subtitle = element_text(size = 18),
+                                axis.title.y.right = element_text(size = 18))),
+  ggsignif.args = list(textsize = 3, tip_length = 0.02),
+  centrality.label.args = list(size = 5)) + 
+  scale_x_discrete(labels = c("Original", 
+                              "Undersampling", 
+                              "Near miss", 
+                              "Oversampling", 
+                              "SMOTE"))
 
 combine_plots(
   list(p1, p2),
-  plotgrid.args = list(ncol = 2))
+  plotgrid.args = list(ncol = 1))
 # ---------------------------------------------------------------------------------------------------------------
