@@ -89,7 +89,7 @@ The performance gain plots of obscurity, discrepancy, variable importance order 
 
 <img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure6.png" width="800">
 
-Run [performance_gain_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/performance_gain_plot.R) to reproduce `Figure 6`.
+Run [Figure6.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure6.R) to reproduce `Figure 6`.
 
 (!) This figure can be reproduced using the `data_rashomon.csv`, `data_VDisc.csv`, and `data_rashomon_perf.csv`.
 
