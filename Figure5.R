@@ -21,11 +21,11 @@ ggplot(data_long, aes(x = value, y = balancing_method, fill = balancing_method))
   labs(x = "values", y = "", fill = "") +
   scale_y_discrete(limits = c("SMOTE", "Oversampling", "Near miss", "Undersampling", "Original")) +
   theme(legend.position = "none",
-        axis.text.x   = element_text(size = 12),    
-        axis.text.y   = element_text(size = 12),    
-        axis.title.x  = element_text(size = 12),   
-        axis.title.y  = element_text(size = 12),
-        strip.text.x  = element_text(size = 12),
-        strip.text.y  = element_text(size = 11)) + 
+        axis.text.x   = element_text(size = 18),    
+        axis.text.y   = element_text(size = 18),    
+        axis.title.x  = element_text(size = 18),   
+        axis.title.y  = element_text(size = 18),
+        strip.text.x  = element_text(size = 18),
+        strip.text.y  = element_text(size = 18)) + 
   facet_grid(resampling_ratio ~ type, scales = "free_x")
 # ---------------------------------------------------------------------------------------------------------------
