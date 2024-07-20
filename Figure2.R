@@ -11,8 +11,13 @@ library(ggplot2)
 library(MetBrewer)
 library(ggalt)
 library(gridExtra)
+library(readr)
 
+data_rashomon                  <- read_csv("data_rashomon.csv")
 data_rashomon$resampling_ratio <- paste0("resampling ratio = ", data_rashomon$resampling_ratio)
+data_rashomon$balancing_method <- factor(data_rashomon$balancing_method,
+                                         levels = c("Original", "Undersampling", "Near miss", 
+                                                    "Oversampling", "SMOTE"))
 
 ggplot(data_rashomon, aes(x = obscurity, y = discrepancy, col = balancing_method)) +
   geom_point(size = 1, alpha = 0.7) +
@@ -31,4 +36,3 @@ ggplot(data_rashomon, aes(x = obscurity, y = discrepancy, col = balancing_method
                 spread = 0.02, alpha = 0.2, show.legend = TRUE) + 
   facet_wrap(~ resampling_ratio, ncol = 1)
 # ---------------------------------------------------------------------------------------------------------------
-
