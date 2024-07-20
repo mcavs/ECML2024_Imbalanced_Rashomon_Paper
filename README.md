@@ -93,3 +93,5 @@ Run [Figure6.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob
 
 (!) This figure can be reproduced using the `data_rashomon.csv`, `data_VDisc.csv`, and `data_rashomon_perf.csv`.
 
+### Acknowledgement 
+This study is founded by The Scientific and Technological Research Council of Turkiye (TUBITAK) through the 2224-A Grant Program for Participation in Scientific Meetings Abroad with application no.1919B022401776.
