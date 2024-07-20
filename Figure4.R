@@ -9,23 +9,24 @@ library(tidyverse)
 library(ggplot2)
 library(ggstatsplot)
 
-ggbetweenstats(data             = data_VIDisc,
-               x                = balancing_method,
-               y                = similarity_value,
-               type             = "nonparametric",
-               pairwise.display = "s",
-               ylab             = "variable importance order discrepancy",
-               xlab             = "balancing method",
-               ggplot.component = list(theme(text               = element_text(size = 18),
-                                             plot.subtitle      = element_text(size = 18),
-                                             axis.title.y.right = element_text(size = 18))),
-               ggsignif.args = list(textsize   = 3, 
-                                    tip_length = 0.02),
-               centrality.label.args = list(size = 5)) + 
-  scale_x_discrete(labels = c("Original", 
-                              "Undersampling", 
-                              "Near miss", 
-                              "Oversampling", 
-                              "SMOTE"))
+ggbetweenstats(data                  = data_VIDisc,
+               x                     = balancing_method,
+               y                     = similarity_value,
+               type                  = "nonparametric",
+               pairwise.display      = "s",
+               ylab                  = "variable importance order discrepancy",
+               xlab                  = "balancing method",
+               package               = "RColorBrewer",
+               palette               = "Set1",
+               ggplot.component      = list(theme(text               = element_text(size = 18),
+                                                  plot.subtitle      = element_text(size = 18),
+                                                  axis.title.y.right = element_text(size = 18))),
+               ggsignif.args         = list(textsize                 = 3, 
+                                            tip_length               = 0.02),
+               centrality.label.args = list(size                     = 5)) + 
+  scale_x_discrete(labels            = c("Original", 
+                                         "Undersampling", 
+                                         "Near miss", 
+                                         "Oversampling", 
+                                         "SMOTE"))
 # ---------------------------------------------------------------------------------------------------------------
-
