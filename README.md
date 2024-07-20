@@ -59,8 +59,7 @@ Run [Figure2.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob
 ### Figure 3 
 The distribution plots of the Rashomon metrics obscurity and discrepancy for different balancing methods. The plots consist of the results of the statistical tests Kruskal Wallis and Dunn’s Pairwise tests. The reference bars above each violin indicate statistically significant differences between the medians of groups and the corresponding statistical information.
 
-<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Fig_a.png" width="800">
-<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Fig_b.png" width="800">
+<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure3.png" width="800">
 
 Run [Figure3.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure3.R) to reproduce `Figure 3`.
 
@@ -69,7 +68,7 @@ Run [Figure3.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob
 ### Figure 4 
 The distribution plots of the Rashomon metric variable importance order discrepancy for different balancing methods. The plots consist of the results of the only Kruskal-Wallis test. Because there is no difference between groups, no need to conduct any pairwise comparison test.
 
-<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/VIO_disc.png" width="800">
+<img src="https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/plots/Figure4.png" width="800">
 
 Run [Figure4.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/Figure4.R) to reproduce `Figure 4`.
 
@@ -92,5 +91,5 @@ The performance gain plots of obscurity, discrepancy, variable importance order 
 
 Run [performance_gain_plot.R](https://github.com/mcavs/ECML2024_Imbalanced_Rashomon_Paper/blob/main/performance_gain_plot.R) to reproduce `Figure 6`.
 
-(!) This figure can be reproduced using the `data_rashomon.csv` and `data_VDisc.csv`.
+(!) This figure can be reproduced using the `data_rashomon.csv`, `data_VDisc.csv`, and `data_rashomon_perf.csv`.
 
