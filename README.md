@@ -1,4 +1,4 @@
-# The supplementary repository of the paper "An Evaluation Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification" 
+# The supplementary repository for the paper titled "An Evaluation Study on the Rashomon Effect of Balancing Methods in Imbalanced Classification" 
 
 This repository consists the supplemental materials of the paper "[An evaluation study on the Rashomon effect of balancing methods in imbalanced classification](https://arxiv.org/pdf/2405.01557)" which is presented in [DEARING: Workshop on Data-cEntric ARtIficial iNtelliGence](https://dearing2024.di.uniba.it/landing) workshop at [ECML 2024](https://ecmlpkdd.org/2024/) in Vilnius. 
 
